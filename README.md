@@ -28,13 +28,13 @@ A simple project to demonstrate JWT authentication in spring boot.
 
 * Java 21 or higher
 * Maven 3.5.14 or higher
-* Postman
+* Postman (NOTE: curl command currently not working.)
 
 ---
 
 # Starting the application
 
-## Through Maven/Maven Wrapper
+## Jar assembly
 
 Run the following command in your terminal to assemble the jar file for the application
 
@@ -42,19 +42,26 @@ Run the following command in your terminal to assemble the jar file for the appl
 ```sh
 ./mvnw clean package
 ```
-
-Then, run the following command in your terminal to run the application
-```sh
-./mvnw spring-boot:run
-```
 or
-
 * For Maven :
 ```sh
 mvn clean package
 ```
 
-Then, run the following command in your terminal to run the application
+Then, run the following command in your terminal
+```sh
+java -jar target/jwt_authentication-0.0.1-SNAPSHOT.jar
+```
+
+## Through Maven/Maven Wrapper
+
+Run the following command in your terminal to run the application
+```sh
+./mvnw spring-boot:run
+```
+or
+
+Run the following command in your terminal to run the application
 ```sh
 mvn spring-boot:run
 ```
